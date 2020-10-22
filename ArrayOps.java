@@ -25,4 +25,12 @@ public class ArrayOps{
     }
     return summing;
   }
+
+  public static int[] largestInRows(int[][] arr){
+    int[] largest = new int[arr.length];
+    for(int i = 0; i < arr.length; i++){
+      largest[i] = ArrayOps.largest(arr[i]);
+    }
+    return largest;
+  }
 }
