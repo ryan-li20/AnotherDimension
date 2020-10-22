@@ -7,5 +7,6 @@ public class Tester{
     System.out.println(ArrayOps.largest(largest));
     int[][] sumRows = {{4, 1, 6, 3, 7, 9}, {-4, 16, 13, 51, 19}, {0, 1, 2, 7, 18}};// wants 30, 95, 28
     System.out.println(Arrays.toString(ArrayOps.sumRows(sumRows)));
+    System.out.println(Arrays.toString(ArrayOps.largestInRows(sumRows)));
   }
 }
