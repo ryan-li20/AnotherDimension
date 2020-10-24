@@ -33,4 +33,22 @@ public class ArrayOps{
     }
     return largest;
   }
+
+  public static int sum(int[][] arr){
+    int sum = 0;
+    for (int i = 0; i<arr.length; i++){
+      sum += ArrayOps.sum(arr[i]);
+    }
+    return sum;
+  }
+
+  public static int[] sumCols(int[][] arr){
+    int[] sums = new int[arr[0].length];
+    for(int i = 0; i < arr.length; i++){
+      for(int j = 0; j < arr[i].length; j++){
+        sums[j] += arr[i][j];
+      }
+    }
+    return sums;
+  }
 }
