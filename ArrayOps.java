@@ -50,5 +50,17 @@ public class ArrayOps{
       }
     }
     return sums;
+
+
+  }
+
+  public static boolean isRowMagic(int[][] arr){
+    int sum = ArrayOps.sum(arr[0]);
+    for(int i = 0; i < arr.length; i++){
+      if(ArrayOps.sum(arr[i]) != sum){
+        return false;
+      }
+    }
+    return true;
   }
 }
