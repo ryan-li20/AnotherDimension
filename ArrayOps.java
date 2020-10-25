@@ -76,6 +76,9 @@ public class ArrayOps{
 
   public static boolean isColMagic(int[][] arr){
     int[] newSums = ArrayOps.sumCols(arr);
+    if(newSums.length < 1){
+      return true;
+    }
     int standard = newSums[0];
     for(int i = 0; i < newSums.length; i++){
       if(newSums[i] != standard){
